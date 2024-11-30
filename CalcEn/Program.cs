@@ -111,7 +111,16 @@
                 Console.Clear();
             } while (selectedFunction.Key != ConsoleKey.X);
         }
-
+        static void DisplayLaboratoryMenu()
+        {
+            Console.WriteLine("\n\t\tLABORATORY CALCULATOR MENU");
+            Console.WriteLine("\t\tA. Calculate arithmetic mean");
+            Console.WriteLine("\t\tB. Calculate polynomial value");
+            Console.WriteLine("\t\tC. Convert string representation of a number to a numeric value");
+            Console.WriteLine("\t\tD. Calculate Newton's binomial coefficient");
+            Console.WriteLine("\t\tX. Exit Laboratory Calculator");
+            Console.Write("\n\t\tPress an allowed key (A, B, C, D, X): ");
+        }
         static void OutputFromCalculator(List<string> history) // Historia dwóch kalkulatorów
         {
             Console.WriteLine("\n\t\tCalculation history:");
@@ -173,16 +182,7 @@
             return num * Factorial(num - 1);
         }
 
-        static void DisplayLaboratoryMenu()
-        {
-            Console.WriteLine("\n\t\tLABORATORY CALCULATOR MENU");
-            Console.WriteLine("\t\tA. Calculate arithmetic mean");
-            Console.WriteLine("\t\tB. Calculate polynomial value");
-            Console.WriteLine("\t\tC. Convert string representation of a number to a numeric value");
-            Console.WriteLine("\t\tD. Calculate Newton's binomial coefficient");
-            Console.WriteLine("\t\tX. Exit Laboratory Calculator");
-            Console.Write("\n\t\tPress an allowed key (A, B, C, D, X): ");
-        }
+   
 
 
         static void CalculateAverage(List<string> history)
@@ -196,7 +196,7 @@
         }
 
 
-        static void CalculatePolynomial(List<string> history) //Wielomianu
+        static void CalculatePolynomial(List<string> history) //Polynomial
         {
             Console.WriteLine("\n\t\tYou selected: B - Calculate polynomial value");
             Console.WriteLine("\n\t\tEnter coefficients: ");
